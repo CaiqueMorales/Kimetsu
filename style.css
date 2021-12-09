@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap');
+
+/* ============================== CSS Variables ============================== */
+
+:root{
+
+    /* Colors */
+    --clr-primary-400: #04A2F6;
+    --clr-primary-500: #3D3A50;
+    --clr-primary-700: #303041;
+
+    --clr-neutral-400: #FFFFFF;
+    --clr-neutral-500: #F4FCFE;
+
+
+    /* Sizes */
+    --p-medium: 4em;
+
+
+
+}
+
+
+/* ============================== HTML Reseting ============================== */
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    line-height: 1.6;
+    font-family: 'Montserrat', sans-serif;
+    color: var(--clr-neutral-500);
+}
+
+section{
+    padding: 6em 0;
+    background-color: var(--clr-primary-500);
+}
+
+ul{
+    list-style: none;
+}
+
+img{
+    width: 100%;
+    height: auto;
+}
+
+h1,
+h2,
+h3,
+h4{
+    line-height: 1;
+}
+
+a{
+    text-decoration: none;
+    display: inline-block;    
+}
+
+
+/* ============================== Reusable Classes ============================== */
+
+.container{
+    margin-inline: auto;
+    width: min(90%, 70.5rem);
+}
+
+.split{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 3em;
+}
+
+.split > * {
+    flex-basis: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media screen and (min-width: 768px){
+
+    .split{
+        flex-direction: row;
+    }
+
+}
+
+.push-right{
+    margin-left: auto;
+}
+
+.text-center{
+    text-align: center;
+}
+
+
+/* ============================== Styling ============================== */
+
+section:nth-of-type(2),
+section:nth-of-type(4){
+    background-color: var(--clr-primary-700);
+}
+
+.breathing-title,
+.water-breathing-title,
+.lightning-breathing-title{
+    margin-bottom: 1em;
+}
+
+/* ========== Header ========== */
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+}
+
+/* ========== Footer ========== */
+
+.footer{
+    padding: 6em 0;
+}
+
+.footer-menu{
+    display: flex;
+    flex-direction: column;
+}
